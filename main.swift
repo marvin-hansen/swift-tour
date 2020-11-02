@@ -52,6 +52,47 @@ I said "I have \(apples) apples,"
 and then I said "I have \(apples + oranges) pieces of fruit."
 """
 print("quotation", quotation)
+print("")
+
+print("Arrays")
+
+var shoppingList = ["catfish", "water", "tulips"]
+
+var occupations = [
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+
+for (name, jobs) in occupations{
+    print(name, jobs)
+}
+
+print("")
+shoppingList.append("blue paint")
+print(shoppingList)
+
+// To create an empty array or dictionary, use the initializer syntax.
+let emptyArray = [String](repeating: "", count: 64)
+
+// Use this initializer to avoid intermediate reallocations of a dictionary’s storage buffer
+//  when you know how many key-value pairs you are adding to a dictionary after creation.
+let emptyDictionary = [String: Float](minimumCapacity: 12)
+
+print("")
+
+print("Control Flow")
+
+let individualScores = [75, 43, 103, 87, 12]
+var teamScore = 0
+for score in individualScores {
+    if score > 50 {
+        teamScore += 3
+    } else {
+        teamScore += 1
+    }
+}
+print(teamScore)
 
 
 
